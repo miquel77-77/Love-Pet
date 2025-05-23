@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love&Pet - Tu Mascota Virtual</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #fff);
+      color: #333;
+    }
+    header {
+      background-color: #ffd54f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #5d4037;
+    }
+    main {
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+    }
+    .mascota {
+      text-align: center;
+    }
+    .mascota img {
+      width: 200px;
+      border-radius: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .tienda, .competencias {
+      background-color: #fffde7;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .item img {
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffe082;
+      margin-top: 2rem;
+      color: #5d4037;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Love&Pet</h1>
+    <div><strong>Monedas:</strong> 1200 🪙</div>
+  </header>
+
+  <main>
+    <section class="mascota">
+      <h2>Tu Capibara Feliz</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" alt="Capibara" />
+      <p>Estado: 🥰 Feliz y saludable</p>
+    </section>
+
+    <section class="tienda">
+      <h2>Tienda de Accesorios</h2>
+      <div class="item">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Sombrero" />
+        <div>Sombrero elegante - 150 🪙</div>
+      </div>
+      <div class="item">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Mochila" />
+        <div>Mochila para aventuras - 250 🪙</div>
+      </div>
+    </section>
+
+    <section class="competencias">
+      <h2>Competiciones</h2>
+      <p>🏆 Participa en la carrera de capibaras y gana premios semanales.</p>
+      <button>Unirse a la competencia</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Love&Pet - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
